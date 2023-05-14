@@ -8,7 +8,7 @@
 Summary:	A KDE web browser
 Name:		ka5-%{kaname}
 Version:	23.04.1
-Release:	1
+Release:	2
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
@@ -121,6 +121,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{_libdir}/qt5/plugins/falkon
 %attr(755,root,root) %{_libdir}/qt5/plugins/falkon/AutoScroll.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/falkon/FlashCookieManager.so
+%attr(755,root,root) %{_libdir}/qt5/plugins/falkon/GnomeKeyringPasswords.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/falkon/GreaseMonkey.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/falkon/KDEFrameworksIntegration.so
 %attr(755,root,root) %{_libdir}/qt5/plugins/falkon/MouseGestures.so
