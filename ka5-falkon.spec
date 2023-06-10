@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	23.04.1
+%define		kdeappsver	23.04.2
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		falkon
 Summary:	A KDE web browser
 Name:		ka5-%{kaname}
-Version:	23.04.1
-Release:	2
+Version:	23.04.2
+Release:	1
 License:	GPL v3+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	85d56d3ad7e75afdf12e5efd5a450a50
+# Source0-md5:	0a432ce93d5457ec51f3546037b0637c
 URL:		http://www.kde.org/
 BuildRequires:	Qt5Core-devel >= 5.15.2
 BuildRequires:	Qt5DBus-devel >= 5.15.2
@@ -48,6 +48,7 @@ BuildRequires:	kf5-kwidgetsaddons-devel >= 5.105.0
 BuildRequires:	kf5-kxmlgui-devel >= 5.105.0
 BuildRequires:	kf5-purpose-devel >= 5.78.0
 BuildRequires:	kf5-solid-devel >= 5.105.0
+BuildRequires:	libgnome-keyring-devel
 BuildRequires:	libxcb-devel
 BuildRequires:	ninja
 BuildRequires:	openssl-devel
